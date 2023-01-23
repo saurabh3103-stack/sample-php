@@ -342,7 +342,7 @@ function newPopup(url) {
 ">
                                                         			<div>
 				                                                         	<h3 class="margin-bot1" style="color: #fff;">Login By Property ID</h3>
-																			<form id="form-3" method="post" onload="Captcha();">
+																			<form id="form-3" method="post">
 																			     <?php if(isset($msgg)){?>
     <tr>
       <td colspan="2" align="center" valign="top"><?php echo $msgg;?></td>
@@ -354,7 +354,10 @@ function newPopup(url) {
 																						<span class=""><input type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;" name="pid"></span>
 																					</label>
 																				</fieldset>
-	<h2 type="text" id="mainCaptcha"></h2><p><input type="button" id="refresh" onclick="Captcha();"/></p> 
+                                                                                <div  onload="Captcha();">
+                                                                                <h2 type="text" id="mainCaptcha"></h2>    
+                                                                                </div>
+	<p><input type="button" id="refresh" onclick="Captcha();"/></p> 
 									<div class="">
 										
         <strong class="d-block color-1 margin-bot2">Please Enter code :</strong>
