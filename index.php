@@ -62,13 +62,15 @@ if(isset($_POST['search']))
     <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/jquery-ui-1.8.16.custom.css" type="text/css" media="screen">
     <script src="js/jquery-1.6.3.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
     <script src="js/superfish.js" type="text/javascript"></script>
+    <script src="js/jquery.ui.core.js" type="text/javascript"></script>
     <script src="js/jquery.hoverIntent.js" type="text/javascript"></script>
     <script src="js/FF-cash.js" type="text/javascript"></script> 
     <script src="js/script.js" type="text/javascript"></script>
     <script src="js/tabs.js" type="text/javascript"></script>
-	<script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
-	<script src="js/jquery.ui.core.js" type="text/javascript"></script>
+	
+	
 	<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
 	<script language="javascript" src="js/ajaxfunc2.js"></script>
 	<!-- The JavaScript -->
