@@ -66,7 +66,7 @@ if(isset($_POST['search']))
    
     <script src="js/script.js" type="text/javascript"></script>
     <script src="js/tabs.js" type="text/javascript"></script>
-	
+	 <script src="https://www.google.com/recaptcha/api.js"></script>
 	
 	<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
 	<script language="javascript" src="js/ajaxfunc2.js"></script>
@@ -81,7 +81,12 @@ if(isset($_POST['search']))
     <script src="js/jquery.ui.core.js" type="text/javascript"></script>
     <script src="js/jquery.hoverIntent.js" type="text/javascript"></script>
     <script src="js/FF-cash.js" type="text/javascript"></script> 
-		<script type='text/javascript'>
+		 <script>
+   function onSubmit(token) {
+     document.getElementById("form-3").submit();
+   }
+ </script>
+        <script type='text/javascript'>
 function refreshCaptcha(){
 	var img = document.images['captchaimg'];
 	img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
@@ -340,7 +345,13 @@ function newPopup(url) {
         <strong class="d-block color-1 margin-bot2">Please Enter code :</strong>
         <input id="captcha_code" name="captcha_code" type="text"></td>
 																		</div>
-																				<input name="search" type="submit" class="button-5 mt-3" value="Submit" style="cursor:pointer;">
+                                                                        <button class="g-recaptcha" 
+        data-sitekey="6LcivR4kAAAAAHFx34rjEbqR3FYXKEIc3eyx1SBY" 
+        data-callback='onSubmit' 
+        data-action='submit' name="search">Submit</button><!-- 
+																				<input name="search" type="submit" class="button-5 mt-3" value="Submit" style="cursor:pointer;"> -->
+
+
 																				<!--<a href="#" class="button-5" onClick="document.getElementById('form-3').submit()">Submit</a>-->
 																			</form>
 				                                                     </div>
