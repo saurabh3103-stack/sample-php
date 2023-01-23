@@ -102,7 +102,7 @@ document.onkeydown = function(e) {
 <script type="text/javascript">
 document.onmousedown=disableclick;
 status="Right Click Disabled";
-Function disableclick(event)
+function disableclick(event)
 {
   if(event.button==2)
    {
