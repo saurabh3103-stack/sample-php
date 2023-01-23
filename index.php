@@ -389,7 +389,7 @@ function newPopup(url) {
                                    <div class="margin">
                                                          <h2 type="text" id="mainCaptcha" style="float: left"></h2>    
                                                                              
-    <p><i class="fa fa-repeat btn" id="refresh" onclick="Captcha();" aria-hidden="true"></i></p>
+    <p><i class="fa fa-repeat btn" id="refresh" onclick="Captcha();" aria-hidden="true" style="margin-left: 15px;"></i></p>
                                    </div>                            
 									<div class="margin">
 										
@@ -461,9 +461,9 @@ function newPopup(url) {
 																	</div>
 																</fieldset>
 																<br>
-													           <h2 type="text" id="mainCaptcha2"></h2>    
-                                                                             
-    <p><input type="button" id="refresh" onclick="Captcha_2();"/></p> 
+            										           <h2 type="text" id="mainCaptcha2" style="float:left;"></h2>    
+       <p><i class="fa fa-repeat btn" id="refresh" onclick="Captcha_2();" aria-hidden="true" style="margin-left: 15px;"></i></p>                                             
+       </div> 
 									<div class="">
 										
         <strong class="d-block color-1 margin-bot2">Please Enter code :</strong>
