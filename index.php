@@ -63,10 +63,7 @@ if(isset($_POST['search']))
 	<link rel="stylesheet" href="css/jquery-ui-1.8.16.custom.css" type="text/css" media="screen">
     <script src="js/jquery-1.6.3.min.js" type="text/javascript"></script>
     <script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
-    <script src="js/superfish.js" type="text/javascript"></script>
-    <script src="js/jquery.ui.core.js" type="text/javascript"></script>
-    <script src="js/jquery.hoverIntent.js" type="text/javascript"></script>
-    <script src="js/FF-cash.js" type="text/javascript"></script> 
+   
     <script src="js/script.js" type="text/javascript"></script>
     <script src="js/tabs.js" type="text/javascript"></script>
 	
@@ -80,6 +77,10 @@ if(isset($_POST['search']))
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
 		<link rel="stylesheet" type="text/css" href="css/jquerytour.css" />
+         <script src="js/superfish.js" type="text/javascript"></script>
+    <script src="js/jquery.ui.core.js" type="text/javascript"></script>
+    <script src="js/jquery.hoverIntent.js" type="text/javascript"></script>
+    <script src="js/FF-cash.js" type="text/javascript"></script> 
 		<script type='text/javascript'>
 function refreshCaptcha(){
 	var img = document.images['captchaimg'];
