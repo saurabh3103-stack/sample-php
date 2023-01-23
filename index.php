@@ -81,6 +81,14 @@ if(isset($_POST['search']))
     <script src="js/jquery.ui.core.js" type="text/javascript"></script>
     <script src="js/jquery.hoverIntent.js" type="text/javascript"></script>
     <script src="js/FF-cash.js" type="text/javascript"></script> 
+		<script>
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 85 )) {
+            return false;
+        }
+};
+</script>
 <script type="text/javascript">
 document.onmousedown=disableclick;
 status="Right Click Disabled";
@@ -345,7 +353,7 @@ function newPopup(url) {
 																						<span class=""><input type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;" name="pid"></span>
 																					</label>
 																				</fieldset>
-	<h2 type="text" id="mainCaptcha"></h2><p><i class="fa fa-repeat" type="button" id="refresh" onclick="Captcha();" aria-hidden="true"></i></p> 
+	<h2 type="text" id="mainCaptcha"></h2><p><input type="button" id="refresh" onclick="Captcha();"/></p> 
 									<div class="">
 										
         <strong class="d-block color-1 margin-bot2">Please Enter code :</strong>
