@@ -117,7 +117,7 @@ if(isset($_POST['search']))
     padding: 4px 9px 5px 9px;
     font-size: 28px;}
     #mainCaptcha2{    background: #fff;
-    width: 58%;
+    width: 48%;
     padding: 4px 9px 5px 9px;
     font-size: 28px;}
 
