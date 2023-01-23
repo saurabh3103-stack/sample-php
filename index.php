@@ -288,6 +288,9 @@ function removeSpaces(string){
  }
 }
 #page1 #content, #content {padding: 0px;padding-bottom: 5px;}
+#mainCaptcha{background: #fff;
+    width: fit-content;
+    padding: 4px 11px 5px 10px;}
 </style>
 
 
