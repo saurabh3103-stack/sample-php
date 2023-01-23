@@ -117,6 +117,7 @@ function disableclick(event)
          var g = alpha[Math.floor(Math.random() * alpha.length)];
                       }
          var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
+         alert(code);
          document.getElementById("mainCaptcha").innerHTML = code
          document.getElementById("mainCaptcha").value = code
        }
