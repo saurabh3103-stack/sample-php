@@ -348,7 +348,7 @@ function newPopup(url) {
 ">
                                                         			<div>
 				                                                         	<h3 class="margin-bot1" style="color: #fff;">Login By Property ID</h3>
-																			<form id="form-3" method="post">
+																			<form id="form-3" method="post" onload="Captcha();">
 																			     <?php if(isset($msgg)){?>
     <tr>
       <td colspan="2" align="center" valign="top"><?php echo $msgg;?></td>
