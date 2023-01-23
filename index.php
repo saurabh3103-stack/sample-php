@@ -386,12 +386,12 @@ function newPopup(url) {
 																					</label>
 																				</fieldset>
                                                                             
-                                   <div class="row">
+                                   <div class="margin">
                                                          <h2 type="text" id="mainCaptcha" style="float: left"></h2>    
                                                                              
     <p><i class="fa fa-repeat btn" id="refresh" onclick="Captcha();" aria-hidden="true"></i></p>
                                    </div>                            
-									<div class="row">
+									<div class="margin">
 										
         <strong class="d-block color-1 margin-bot2" style="margin-right: 31%;">Please Enter code :</strong>
         <input id="captcha_code" name="captcha_code" type="text"></td>
