@@ -17,9 +17,9 @@ if(isset($_POST['submit'])){
     $name = $_POST['name'];
     $chk = $chak_number;
 	// code for check server side validation
-	if(empty($_SESSION['captcha_codee'] ) || strcasecmp($_SESSION['captcha_codee'], $_POST['captcha_code']) != 0){  
-		$msg="<span style='color:red'>Please Enter the correct Captcha!</span>";// Captcha verification is incorrect.		
-	}else{// Captcha verification is Correct. Final Code Execute here!
+	// if(empty($_SESSION['captcha_codee'] ) || strcasecmp($_SESSION['captcha_codee'], $_POST['captcha_code']) != 0){  
+	// 	$msg="<span style='color:red'>Please Enter the correct Captcha!</span>";// Captcha verification is incorrect.		
+	// }else{// Captcha verification is Correct. Final Code Execute here!
 		$_SESSION['hno']=$hno;
 		$_SESSION['address']=$address;		
 		$_SESSION['ward_number']=$ward;
@@ -28,19 +28,18 @@ if(isset($_POST['submit'])){
 		$_SESSION['chak_number']=$chk;
 		$_SESSION['captch']= $captch;
 		header("location:details.php");	
-	}
+	// }
 }	
 
 if(isset($_POST['search']))
 {
-    if(empty($_SESSION['captcha_code'] ) || strcasecmp($_SESSION['captcha_code'], $_POST['captcha_code']) != 0){  
-		$msgg="<span style='color:red'>Please Enter the correct Captcha!</span>";// Captcha verification is incorrect.		
-	}
-	else{
-        
+ //    if(empty($_SESSION['captcha_code'] ) || strcasecmp($_SESSION['captcha_code'], $_POST['captcha_code']) != 0){  
+	// 	$msgg="<span style='color:red'>Please Enter the correct Captcha!</span>";// Captcha verification is incorrect.		
+	// }
+	// else{ 
 	$pid=$_POST['pid'];
 	header("location:detailsByPropnonew.php?propert_id=$pid");
-	}
+	// }
 } 
 // else
 // {
