@@ -328,7 +328,7 @@ function newPopup(url) {
 																						<span class=""><input type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;" name="pid"></span>
 																					</label>
 																				</fieldset>
-																					<img src="captcha.php?rand=<?php echo rand();?>" id='captchaimg' class="mt-2"><p style="
+																				  <img src="scripts/captcha.php" alt="PHP Captcha" class="mt-2"><p style="
     color: antiquewhite; margin: 0px !important;
 ">
         Can't read the image? click <a href='javascript: refreshCaptcha();' style="
