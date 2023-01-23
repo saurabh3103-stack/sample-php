@@ -117,7 +117,6 @@ function disableclick(event)
          var g = alpha[Math.floor(Math.random() * alpha.length)];
                       }
          var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
-         alert(code);
          document.getElementById("mainCaptcha").innerHTML = code
          document.getElementById("mainCaptcha").value = code
        }
@@ -279,9 +278,10 @@ function removeSpaces(string){
  }
 }
 #page1 #content, #content {padding: 0px;padding-bottom: 5px;}
-#mainCaptcha{background: #fff;
-    width: fit-content;
-    padding: 4px 11px 5px 10px;}
+#mainCaptcha{    background: #fff;
+    width: 58%;
+    padding: 4px 9px 5px 9px;
+    font-size: 28px;}
 </style>
 
 
