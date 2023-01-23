@@ -3,8 +3,8 @@
 //get from razorpay account in settings 
 // $key_id='rzp_live_hMGk4VgdXCDmyt'; 
 //$secret='1O4s0l20kuovmnABPoOkrkLc';
-$keyId = 'rzp_live_lWMceukiCkeQ83';
-$keySecret = 'hy4CSu99Aj3e1SC1hVIUpLrI';
+$keyId = 'rzp_live_u7J5hHcgW1VvLa';
+$keySecret = 'ZBUlzct8HxyF5yf2NBUVa2yv';
 $displayCurrency = 'INR';
 
 //These should be commented out in production
