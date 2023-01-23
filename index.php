@@ -415,7 +415,7 @@ function newPopup(url) {
       <td colspan="2" align="center" valign="top"><?php echo $msg;?></td>
     </tr>
     <?php } ?>
-																<fieldset>
+																<fieldset class="margin">
 																	<div class="row">
 																	    <div class="col-md-6">
 																			<strong class="d-block color-1 margin-bot2">Select Zone<span>*</span>:</strong>
@@ -461,10 +461,11 @@ function newPopup(url) {
 																	</div>
 																</fieldset>
 																<br>
+                                                                <div class="margin">
             										           <h2 type="text" id="mainCaptcha2" style="float:left;"></h2>    
        <p><i class="fa fa-repeat btn" id="refresh" onclick="Captcha_2();" aria-hidden="true" style="margin-left: 15px;"></i></p>                                             
        </div> 
-									<div class="">
+									<div class="margin">
 										
         <strong class="d-block color-1 margin-bot2">Please Enter code :</strong>
         <input id="captcha_code" name="captcha_code" type="text"></td>
