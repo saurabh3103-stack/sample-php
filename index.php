@@ -145,7 +145,7 @@ function removeSpaces(string){
 	<![endif]-->
 
 </head>
-<body id="page1" oncontextmenu="return false">
+<body id="page1" oncontextmenu="return false"  onload="Captcha();">
 <!--=========================================header=============================================-->
                 <div class="hover_bkgr_fricc">
     <span class="helper"></span>
@@ -352,7 +352,7 @@ function newPopup(url) {
 																						<span class=""><input type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;" name="pid"></span>
 																					</label>
 																				</fieldset>
-                                                                                <div  onload="Captcha();">
+                                                                                <div>
                                                                                 <h2 type="text" id="mainCaptcha"></h2>    
                                                                                 </div>
 	<p><input type="button" id="refresh" onclick="Captcha();"/></p> 
