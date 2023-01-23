@@ -81,24 +81,6 @@ if(isset($_POST['search']))
     <script src="js/jquery.ui.core.js" type="text/javascript"></script>
     <script src="js/jquery.hoverIntent.js" type="text/javascript"></script>
     <script src="js/FF-cash.js" type="text/javascript"></script> 
-        <script type='text/javascript'>
-function refreshCaptcha(){
-	var img = document.images['captchaimg'];
-	img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
-}
-function refreshCaptchaa(){
-	var img = document.images['captchaimgg'];
-	img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
-}
-</script>
-		<script>
-document.onkeydown = function(e) {
-        if (e.ctrlKey && 
-            (e.keyCode === 85 )) {
-            return false;
-        }
-};
-</script>
 <script type="text/javascript">
 document.onmousedown=disableclick;
 status="Right Click Disabled";
@@ -363,13 +345,7 @@ function newPopup(url) {
 																						<span class=""><input type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;" name="pid"></span>
 																					</label>
 																				</fieldset>
-																				 <h2 type="text" id="mainCaptcha"></h2><p style="
-    color: antiquewhite; margin: 0px !important;
-">
-        Can't read the image? click <a href='javascript: refreshCaptcha();' style="
-
-    font-size: 17px;
-">here</a> to refresh.</p>
+	<h2 type="text" id="mainCaptcha"></h2><p><i class="fa fa-repeat" type="button" id="refresh" onclick="Captcha();" aria-hidden="true"></i></p> 
 									<div class="">
 										
         <strong class="d-block color-1 margin-bot2">Please Enter code :</strong>
