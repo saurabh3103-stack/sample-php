@@ -1,6 +1,6 @@
 <?php
 /*phptext class, version 1.0
-created by www.w3schools.in (Gautam kumar)
+created by www.w3schools.in
 April 26, 2014
 */
 class phptextClass
