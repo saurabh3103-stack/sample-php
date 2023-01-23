@@ -37,6 +37,7 @@ if(isset($_POST['search']))
 		$msgg="<span style='color:red'>Please Enter the correct Captcha!</span>";// Captcha verification is incorrect.		
 	}
 	else{
+        
 	$pid=$_POST['pid'];
 	header("location:detailsByPropnonew.php?propert_id=$pid");
 	}
