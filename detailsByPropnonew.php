@@ -378,7 +378,7 @@ to {
       $('#preloader').delay(7000).queue(function() {
         $(this).remove();
       });}
-  }, 11000);});
+  }, 9000);});
 </script>
 </head>
 <body id="page1" class="bodyy-content" oncontextmenu="return false" style="background: #fff8c6;">
@@ -400,7 +400,7 @@ to {
                 <div class="loader-section section-right"></div>
             </div>
         </div>  
-
+            
 <!--=========================================header=============================================-->
                 <div class="hover_bkgr_fricc">
     <span class="helper"></span>
