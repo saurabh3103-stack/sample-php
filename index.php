@@ -223,8 +223,10 @@ function disableclick(event)
        }
 function ValidCaptcha(){
      var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
-     var string2 =         removeSpaces(document.getElementById('txtInput').value);
+     var string2 =         removeSpaces(document.getElementById('captcha_code').value);
+     var string3 =         removeSpaces(document.getElementById('pid').value);
      if (string1 == string2){
+        alert(string3);
             return true;
      }else{        
           return false;
@@ -379,12 +381,13 @@ function newPopup(url) {
       <td colspan="2" align="center" valign="top"><?php echo $msgg;?></td>
     </tr>
     <?php } ?>
-																				<fieldset class="margin">
-																					<strong class="d-in-block color-1 margin-bot2">Enter your property number:</strong>
-																					<label class="d-block margin-bot2">
-																						<span class=""><input type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;" name="pid"></span>
-																					</label>
-																				</fieldset>
+			<fieldset class="margin">
+				<strong class="d-in-block color-1 margin-bot2">Enter your property number:</strong>
+					<label class="d-block margin-bot2">
+					<span class="">
+                        <input type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;" id="pid"></span>
+			         </label>
+			</fieldset>
                                                                             
                                    <div class="margin">
                                                          <h2 type="text" id="mainCaptcha" style="float: left"></h2>    
@@ -396,8 +399,8 @@ function newPopup(url) {
         <strong class="d-block color-1 margin-bot2" style="margin-right: 31%;">Please Enter code :</strong>
         <input id="captcha_code" name="captcha_code" type="text"></td>
 																		</div>
-                                                                       
-																				<input name="search" type="submit" class="button-5 mt-3" value="Submit" style="cursor:pointer;">
+         <input id="Button1" type="button" class="button-5 mt-3" value="Submit" onclick="alert(ValidCaptcha());"/>                      
+	<!-- <input name="search" type="submit"  value="Submit" style="cursor:pointer;"> -->
 
 
 																				<!--<a href="#" class="button-5" onClick="document.getElementById('form-3').submit()">Submit</a>-->
