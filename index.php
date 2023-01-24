@@ -458,7 +458,7 @@ function removeSpacess(string){
       $('#preloader').delay(7000).queue(function() {
         $(this).remove();
       });}
-  }, 11000);});
+  }, 90000);});
 </script>
 </head>
 <body id="page1" oncontextmenu="return false"  onload="Captcha(); Captcha_2();">
