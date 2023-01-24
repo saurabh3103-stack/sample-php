@@ -468,13 +468,12 @@ function removeSpacess(string){
         <div class="animation-preloader">
             <div class="spinner"></div>
                 <div class="txt-loading">
-                    <span preloader-text="S" class="characters">S</span>                    
-                        <span preloader-text="O" class="characters">O</span>
-                        <span preloader-text="F" class="characters">F</span>
-                        <span preloader-text="T" class="characters">T</span>
-                        <span preloader-text="D" class="characters">D</span>
-                        <span preloader-text="E" class="characters">E</span>
-                        <span preloader-text="V" class="characters">V</span>
+                    <span preloader-text="K" class="characters">S</span>                    
+                        <span preloader-text="A" class="characters">O</span>
+                        <span preloader-text="N" class="characters">F</span>
+                        <span preloader-text="P" class="characters">T</span>
+                        <span preloader-text="U" class="characters">D</span>
+                        <span preloader-text="R" class="characters">E</span>
                     </div>
                 </div>  
                 <div class="loader-section section-left"></div>
