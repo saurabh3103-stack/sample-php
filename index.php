@@ -291,7 +291,7 @@ function ValidCaptchaa(){
      var string6 = removeSpaces(document.getElementById('chak_number').value);
      var string7 = removeSpaces(document.getElementById('address').value);
      if (string1 == string2){
-         if(string6==null)
+         if(!string6)
          {
             var chk="Select";
             window.location.href="https://walrus-app-yt4w5.ondigitalocean.app/details.php?zone="+string3+"&Ward="+string4+"&chk="+chk+"&hno="+string7+"&name="+string5;
