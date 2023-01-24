@@ -250,6 +250,7 @@ function ValidCaptcha(){
      if (string1 == string2){
         alert(string3);
             return true;
+            window.location.href = "detailsByPropnonew.php?propert_id="+string3;
      }else{        
           return false;
           }
