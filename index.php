@@ -344,7 +344,7 @@ function removeSpacess(string){
                         </div>
                         <div class="main col-md-11 p-0">
                             <ul class="menu">
-                                <marquee style="color: #fff;font-size: 21px;">Pay Your Property Tax Before 31-March-2023</marquee>
+                                <marquee style="color: #fff;font-size: 21px;" class="mt-1">Pay Your Property Tax Before 31-March-2023</marquee>
                             </ul>        
                         </div>
                     </div>
