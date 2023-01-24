@@ -249,7 +249,6 @@ function ValidCaptcha(){
      var string3 =         removeSpaces(document.getElementById('pid').value);
      if (string1 == string2){
         alert(string3);
-            return true;
             window.location.href ="https://walrus-app-yt4w5.ondigitalocean.app/detailsByPropnonew.php?propert_id="+string3;
      }else{        
           return false;
