@@ -31,24 +31,24 @@ if(isset($_POST['submit'])){
 	// }
 }	
 
-if(isset($_POST['search']))
-{
- //    if(empty($_SESSION['captcha_code'] ) || strcasecmp($_SESSION['captcha_code'], $_POST['captcha_code']) != 0){  
-	// 	$msgg="<span style='color:red'>Please Enter the correct Captcha!</span>";// Captcha verification is incorrect.		
-	// }
-	// else{ 
-	$pid=$_POST['pid'];
-	header("location:detailsByPropnonew.php?propert_id=$pid");
-	// }
-} 
-// else
+// if(isset($_POST['search']))
 // {
-// 	$msgg="<p style='
-//     font-size: 18px;
-//     color: #a10000;
-//     font-weight: 600;
-// '>*Please Fill Correct Property ID</p>";
-// }
+//  //    if(empty($_SESSION['captcha_code'] ) || strcasecmp($_SESSION['captcha_code'], $_POST['captcha_code']) != 0){  
+// 	// 	$msgg="<span style='color:red'>Please Enter the correct Captcha!</span>";// Captcha verification is incorrect.		
+// 	// }
+// 	// else{ 
+// 	$pid=$_POST['pid'];
+// 	header("location:detailsByPropnonew.php?propert_id=$pid");
+// 	// }
+// } 
+// // else
+// // {
+// // 	$msgg="<p style='
+// //     font-size: 18px;
+// //     color: #a10000;
+// //     font-weight: 600;
+// // '>*Please Fill Correct Property ID</p>";
+// // }
 ?>
 
 
@@ -278,7 +278,7 @@ function ValidCaptchaa(){
      var string1 = removeSpaces(document.getElementById('mainCaptcha2').value);
      var string2 =         removeSpaces(document.getElementById('txtInput2').value);
      if (string1 == string2){
-            return true;
+    window.location.href="https://walrus-app-yt4w5.ondigitalocean.app/details.php?propert_id="+string3;
      }else{        
           return false;
           }
