@@ -430,8 +430,8 @@ function removeSpacess(string){
 																		</div>
 																		<div class="col-md-6">
 																			<strong class="d-block color-1 margin-bot2">Select House No.:</strong>
-			<input type="text" id="address" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">	
-																		</div>
+<input type="text" id="address" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;"/>	
+</div>
 																																		
 																		<div class="clear"></div>
 																	</div>
@@ -448,9 +448,10 @@ function removeSpacess(string){
 																<br>
                                                                 <div class="margin">
 <h2 type="text" class="text-center" id="mainCaptcha2" style="float:left;"></h2>  
-<p id="mainCaptchaerror2"></p>  
-<p><i class="fa fa-repeat" id="refresh" onclick="Captcha_2();" aria-hidden="true" style="margin-left: 15px;"></i></p>                                             
-       </div> 
+<p>
+<i class="fa fa-repeat" id="refresh" onclick="Captcha_2();" aria-hidden="true" style="margin-left: 15px;"></i></p>
+<p id="mainCaptchaerror2"></p>                                       
+  </div> 
 									<div class="margin">
 										
         <strong class="color-1">Please Enter code :</strong>
@@ -458,8 +459,7 @@ function removeSpacess(string){
         <input id="captchaa_code" name="captcha_code" type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;"></td>
 <br/>
 <input id="Button2"type="button"class="button-5"value="Submit"style="margin-top:15px;"onclick="ValidCaptchaa();"/>
-						              </div><!-- 
-<input type="submit" >&gt; -->
+						              </div>
 															
 															</form>
 
