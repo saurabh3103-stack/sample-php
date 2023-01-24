@@ -1,8 +1,8 @@
 <?php
-$server="localhost";
-$user="u593465879_kmcc";
-$password="Kmc@123456";
-$database="u593465879_kmcc";
+$server="db-mysql-blr1-63524-do-user-13373407-0.b.db.ondigitalocean.com";
+$user="doadmin";
+$password="AVNS_LEZb0BBopqzURNBhFRI";
+$database="defaultdb";
 $conn=mysqli_connect($server,$user,$password,$database);
 if(mysqli_connect_error())
 {
