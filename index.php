@@ -1,33 +1,33 @@
-<?php session_start();
+<!-- <?php //session_start();
 
-if(isset($_POST['submit'])){
-	$chak_numberr=$_POST['chak_number'];
-    if(empty($chak_numberr))
+//if(isset($_POST['submit'])){
+//	$chak_numberr=$_POST['chak_number'];
+  //  if(empty($chak_numberr))
     {
-        $chak_number="Select";
+      //  $chak_number="Select";
     }
-    else
+    //else
     {
-        $chak_number=$chak_numberr;
+      //  $chak_number=$chak_numberr;
     }
-    $captch=$_POST['captcha_code'];
-    $hno = $_POST['address'];
-    $zone = $_POST['zone_number'];
-    $ward = $_POST['ward_number'];
-    $name = $_POST['name'];
-    $chk = $chak_number;
+   // $captch=$_POST['captcha_code'];
+    //$hno = $_POST['address'];
+    //$zone = $_POST['zone_number'];
+    //$ward = $_POST['ward_number'];
+    ///$name = $_POST['name'];
+    //$chk = $chak_number;
 	// code for check server side validation
 	// if(empty($_SESSION['captcha_codee'] ) || strcasecmp($_SESSION['captcha_codee'], $_POST['captcha_code']) != 0){  
 	// 	$msg="<span style='color:red'>Please Enter the correct Captcha!</span>";// Captcha verification is incorrect.		
 	// }else{// Captcha verification is Correct. Final Code Execute here!
-		$_SESSION['hno']=$hno;
-		$_SESSION['address']=$address;		
-		$_SESSION['ward_number']=$ward;
-		$_SESSION['zone_number']=$zone;
-		$_SESSION['name']=$name;
-		$_SESSION['chak_number']=$chk;
-		$_SESSION['captch']= $captch;
-		header("location:details.php");	
+	//	$_SESSION['hno']=$hno;
+	//	$_SESSION['address']=$address;		
+	//	$_SESSION['ward_number']=$ward;
+	//	$_SESSION['zone_number']=$zone;
+	//	$_SESSION['name']=$name;
+	//	$_SESSION['chak_number']=$chk;
+	//	$_SESSION['captch']= $captch;
+	//	header("location:details.php");	
 	// }
 }	
 
@@ -50,7 +50,7 @@ if(isset($_POST['submit'])){
 // // '>*Please Fill Correct Property ID</p>";
 // // }
 ?>
-
+ -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -284,9 +284,14 @@ function Captcha_2(){
        }
 function ValidCaptchaa(){
      var string1 = removeSpaces(document.getElementById('mainCaptcha2').value);
-     var string2 =         removeSpaces(document.getElementById('txtInput2').value);
+     var string2 = removeSpaces(document.getElementById('captchaa_code').value);
+     var string3 = removeSpaces(document.getElementById('zone_number').value);
+     var string4 = removeSpaces(document.getElementById('ward_number').value);
+     var string5 = removeSpaces(document.getElementById('name').value);
+     var string6 = removeSpaces(document.getElementById('chak_number').value);
      if (string1 == string2){
-    window.location.href="https://walrus-app-yt4w5.ondigitalocean.app/details.php?propert_id="+string3;
+        alert(string1+"<br>"+string2+"<br>"+string3+"<br>"+string4+"<br>"+string5+"<br>"+string6);
+      window.location.href="https://walrus-app-yt4w5.ondigitalocean.app/details.php?propert_id="+string3;
      }else{        
           return false;
           }
@@ -426,7 +431,7 @@ function newPopup(url) {
 																	<div class="row">
 																	    <div class="col-md-6">
 																			<strong class="d-block color-1 margin-bot2">Select Zone<span>*</span>:</strong>
-         <select name="zone_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
+         <select id="zone_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
 <option value="0">=Zone=</option>
 <option value="1">1::Civil Lines</option> 
 <option value="2">2::Krishna Nagar</option> 
@@ -436,9 +441,9 @@ function newPopup(url) {
 <option value="6">6::Mariumpur</option> 
 </select>																</div>
 																		<div class="col-md-6">
-																			<strong class="d-block color-1 margin-bot2">Enter Ward No<span>*</span>:</strong>
-																			<input type="number" name="ward_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
-													<span id="blockLoader"></span>	
+						<strong class="d-block color-1 margin-bot2">Enter Ward No<span>*</span>:</strong>
+					<input type="number" id="ward_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
+										<span id="blockLoader"></span>	
 																		</div>
 																																			
 																		<div class="clear"></div>
@@ -446,13 +451,13 @@ function newPopup(url) {
 																	<div class="row">
 																	
 																		<div style="height:10px;"></div>
-																		<div class="col-md-6">
-																			<strong class="d-block color-1 margin-bot2">Enter Chak Number:</strong>
-																		<input type="number" name="chak_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
-																		</div>
-																		<div class="col-md-6">
-																			<strong class="d-block color-1 margin-bot2">Select House No.:</strong>
-																			<input type="text" name="address" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">	
+															<div class="col-md-6">
+														<strong class="d-block color-1 margin-bot2">Enter Chak Number:</strong>
+							<input type="number" id="chak_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
+												</div>
+													<div class="col-md-6">
+									<strong class="d-block color-1 margin-bot2">Select House No.:</strong>
+			<input type="text" id="address" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">	
 																		</div>
 																																		
 																		<div class="clear"></div>
@@ -461,14 +466,14 @@ function newPopup(url) {
 
 																		<div class="col-md-6">
 																			<strong class="d-block color-1 margin-bot2">Enter Name:</strong>
-																			<input type="text" name="name" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
+			<input type="text" id="name" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
 													<span id="blockLoader"></span>	
 																		</div>
 																		
 																	</div>
 																</fieldset>
 																<br>
-                                                                <div class="margin">
+                   <div class="margin">
         <h2 type="text" class="text-center" id="mainCaptcha2" style="float:left;"></h2>    
        <p><i class="fa fa-repeat btn" id="refresh" onclick="Captcha_2();" aria-hidden="true" style="margin-left: 15px;"></i></p>                                             
        </div> 
@@ -476,9 +481,10 @@ function newPopup(url) {
 										
         <strong class="color-1" style="margin-left: -48%;">Please Enter code :</strong>
         <br>
-        <input id="captcha_code" name="captcha_code" type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;"></td>
+        <input id="captchaa_code" type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;"></td>
 																		</div>
-<input type="submit" class="button-5" name="submit" value="Submit" style="margin-top: 15px;">&gt;
+ <input id="Button2" type="button" class="button-5 mt-3" value="Submit" onclick="ValidCaptchaa();"/>     
+<!-- <input type="submit" class="button-5" name="submit" value="Submit" style="margin-top: 15px;">&gt; -->
 															
 															</form>
 
