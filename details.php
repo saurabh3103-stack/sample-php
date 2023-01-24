@@ -4,11 +4,6 @@ $ward=$_REQUEST['Ward'];
 $chk=$_REQUEST['chk'];
 $hno=$_REQUEST['hno'];
 $name=$_REQUEST['name'];
-echo $zone;
-echo $ward;
-echo $chk;
-echo $hno;
-echo $name;
 $curl = curl_init();
 curl_setopt_array($curl, array(
             CURLOPT_URL => 'https://knndigitalpayment.com/AppSearchpid.php',
