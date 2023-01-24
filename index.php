@@ -476,11 +476,9 @@ function newPopup(url) {
 										
         <strong class="color-1" style="margin-left: -48%;">Please Enter code :</strong>
         <br>
-        <input id="captcha_code" name="captcha_code" type="text"></td>
+        <input id="captcha_code" name="captcha_code" type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;"></td>
 																		</div>
-																<input type="submit" class="button-5" name="submit" value="Submit" style="
-    margin-top: 15px;
-">&gt;
+<input type="submit" class="button-5" name="submit" value="Submit" style="margin-top: 15px;">&gt;
 															
 															</form>
 
