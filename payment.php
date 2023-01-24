@@ -88,16 +88,6 @@ Function disableclick(event)
     color: #000;
     display: block !important;
 }
-</style>
-</head>
-<body id="page1" oncontextmenu="return false" style="
-    background: #fff8c6;
-">
-<!--=========================================header=============================================-->
-                <div class="hover_bkgr_fricc">
-    <span class="helper"></span>
-</div>
-<style>
 /* Popup box BEGIN */
 .hover_bkgr_fricc{
     background:rgba(0,0,0,.4); 
@@ -168,41 +158,30 @@ h6 {
   border: 1px solid #a10000;
 }
 </style>
+</head>
+<body id="page1" oncontextmenu="return false" style="
+    background: #fff8c6;
+">
+<!--=========================================header=============================================-->
+                <div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+</div>
 <header id="header">
                     <div class="main" style="text-align:center;">
-<img src="images/Header.JPG" class="img-fluid"/>
+<img src="images/Header.JPG" class="img-fluid" />
                         <div class="clear"></div>
                     </div>
-                    <div class="tail-1 border-1">
-                         <div class="main">
-                            <div class="">
-                                <article class="">
-                                    <nav>
-                                        <ul class="menu">
-                                            <marquee style="
-    color: #fff;
-    font-size: 21px;
-    padding: 5px;
-">Pay Your Property Tax Before 31-March-2023</marquee>
-                                            <!--<li class="first"><a class="active" href="index.php">Home<span></span></a></li>-->
-                                            <!--<li><a href="http://kmc.up.nic.in" target="_blank" class="" style="width: 110px;">About us<span></span></a></li>-->
-<!--<li><a href="download_receipt.php" style="width: 180px;">Download Receipt<span></span></a></li>-->
-<!--<li><a href="#" style="width: 160px;">Raise a Concern<span></span></a></li>-->
-<!--<li><a href="contact_us.php" style="width: 100px;">Contact<span></span></a></li>-->
-
-                                        </ul>
-                                        <div class="clear"></div>
-                                    </nav>
-                                </article>
-                                <div class="clear"></div>
-                            </div>
+                   <div class="tail-1 row"style="margin: 0px;">
+                        <div class="col-md-1" style="background: #343a40;">
+                            <p style="color: #fff;background: #343a40;font-size: 21px; margin: 0px;">Notice</p>
+                        </div>
+                        <div class="main col-md-11 p-0">
+                            <ul class="menu">
+                                <marquee style="color: #fff;font-size: 21px;" class="mt-1">Pay Your Property Tax Before 31-March-2023</marquee>
+                            </ul>        
                         </div>
                     </div>
-                </header>
-
-
-			<!--	<marquee behavior="scroll" direction="left" class="scroll-left"><div style="margin-top:10px;color: #FF0000;font-size:22px;">&#x090F;&#x0915; &#x092E;&#x0941;&#x0936;&#x094D;&#x0924; &#x0938;&#x092E;&#x093E;&#x0927;&#x093E;&#x0928; &#x092F;&#x094B;&#x091C;&#x0928;&#x093E; (OTS) &#x0915;&#x0947; &#x0905;&#x0928;&#x094D;&#x0924;&#x0930;&#x094D;&#x0917;&#x0924; 100% &#x092C;&#x094D;&#x092F;&#x093E;&#x091C; &#x092E;&#x093E;&#x092B; &#x0915;&#x0947; &#x0938;&#x093E;&#x0925; &#x0915;&#x0930;&#x0947; &#x0905;&#x092A;&#x0928;&#x0947; &#x0939;&#x093E;&#x0909;&#x0938; &#x091F;&#x0948;&#x0915;&#x094D;&#x0938; &#x0915;&#x093E; &#x092D;&#x0941;&#x0917;&#x0924;&#x093E;&#x0928;</div></marquee>
-             --><br />
+                </header><br />
 
 <!--=========================================content=============================================-->
 			  <section id="content">
@@ -380,74 +359,30 @@ echo "<tbody>
                     </div>
                     </div>
                 </section>
-	<!--==============================footer================================-->
-    <footer>
+<!--==============================footer================================-->
+    <div>
         <div class="main container">
-        	<div class="">
+            <div class="p-4">
                 <div class="wrapper">
                     <article class="">
-					<div class="">
+                    <div class="p-3">
                    
                     </div>
-                    	<center><span class="d-block" style="
+                        <center><span class="d-block" style="
     color: #a10000;
-">Disclaimer - Content/Data on tdis application is published and managed by Kanpur Nagar Nigam.<br />
-For any query regarding tdis application Please Contact Kanpur Nagar Nigam, email-itmekmc@gmail.com </span></center>
-<center><strong>.</strong></center>
+"><strong>Disclaimer -</strong> Content on this website is published and managed by Kanpur Nagar Nigam.
+Contents Provided by Nagar Nigam, Kanpur<br />
+For any query regarding this application Please Contact Kanpur Nagar Nigam, email-kanpur_nagar.nigam@yahoo.co.in</span></center>
+
                         <!--{%FOOTER_LINK} -->
                     </article>
                 </div>
             </div>
         </div>
+    </div>
+    <footer style="background: #a10000;color: #fff;padding: 5px;" class="text-center"">
+        Copyright© Kanpur Nagar Nigam Kanpur All rights reserved.
     </footer>
-
-
-<script type="text/javascript">
-// Popup window code
-function newPopup(url) {
-	popupWindow = window.open(
-		url,'popUpWindow','height=700,widtd=1450,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
-}
-</script>
-<script>
-$(window).load(function () {
-    if(getCookied('popup') != 'seen'){
-       //$('.hover_bkgr_fricc').show();
-   }
-    $('.hover_bkgr_fricc').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-    $('.popupCloseButton').click(function(){
-    setCookied('popup','seen',1);
-        $('.hover_bkgr_fricc').hide();
-    });
-});
-
-
-
-function setCookied(name,value,days) {
-    var expires = "";
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days*24*60*60*1000));
-        expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "")  + expires + "; patd=/";
-}
-function getCookied(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.lengtd;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.lengtd);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.lengtd,c.lengtd);
-    }
-    return null;
-}
-function eraseCookie(name) {
-    document.cookie = name+'=; Max-Age=-99999999;';
-}
-</script>
 <script>
 document.getElementById('timer').innerHTML =
   05 + ":" + 01;
