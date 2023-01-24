@@ -81,11 +81,6 @@ Function disableclick(event)
    }
 }
 </script>
-</head>
-<body id="page1" oncontextmenu="return false" style="
-    background: #fff8c6;
-">
-<!--=========================================header=============================================-->
 <style>
 /* Popup box BEGIN */
 .hover_bkgr_fricc{
@@ -154,40 +149,27 @@ Function disableclick(event)
   border: 1px solid #a10000;
 }
 </style>
+</head>
+<body id="page1" oncontextmenu="return false" style="background: #fff8c6;">
+<!--=========================================header=============================================-->
+
 <header id="header">
                     <div class="main" style="text-align:center;">
-<img src="images/Header.JPG" class="img-fluid"/>
+<img src="images/Header.JPG" class="img-fluid" />
                         <div class="clear"></div>
                     </div>
-                    <div class="tail-1 border-1">
-                      <div class="main">
-                            <div class="">
-                                <article class="">
-                                    <nav>
-                                        <ul class="menu">
-                                            <marquee style="
-    color: #fff;
-    font-size: 21px;
-    padding: 5px;
-">Pay Your Property Tax Before 31-March-2023</marquee>
-                                            <!--<li class="first"><a class="active" href="index.php">Home<span></span></a></li>-->
-                                            <!--<li><a href="http://kmc.up.nic.in" target="_blank" class="" style="width: 110px;">About us<span></span></a></li>-->
-<!--<li><a href="download_receipt.php" style="width: 180px;">Download Receipt<span></span></a></li>-->
-<!--<li><a href="#" style="width: 160px;">Raise a Concern<span></span></a></li>-->
-<!--<li><a href="contact_us.php" style="width: 100px;">Contact<span></span></a></li>-->
-
-                                        </ul>
-                                        <div class="clear"></div>
-                                    </nav>
-                                </article>
-                                <div class="clear"></div>
-                            </div>
+                   <div class="tail-1 row"style="margin: 0px;">
+                        <div class="col-md-1" style="background: #343a40;">
+                            <p style="color: #fff;background: #343a40;font-size: 21px; margin: 0px;">Notice</p>
                         </div>
+                        <div class="main col-md-11 p-0">
+                            <ul class="menu">
+                                <marquee style="color: #fff;font-size: 21px;" class="mt-1">Pay Your Property Tax Before 31-March-2023</marquee>
+                            </ul>        
+                        </div>
+                    </div>
                 </header>
-
-
-			<!--	<marquee behavior="scroll" direction="left" class="scroll-left"><div style="margin-top:10px;color: #FF0000;font-size:22px;">&#x090F;&#x0915; &#x092E;&#x0941;&#x0936;&#x094D;&#x0924; &#x0938;&#x092E;&#x093E;&#x0927;&#x093E;&#x0928; &#x092F;&#x094B;&#x091C;&#x0928;&#x093E; (OTS) &#x0915;&#x0947; &#x0905;&#x0928;&#x094D;&#x0924;&#x0930;&#x094D;&#x0917;&#x0924; 100% &#x092C;&#x094D;&#x092F;&#x093E;&#x091C; &#x092E;&#x093E;&#x092B; &#x0915;&#x0947; &#x0938;&#x093E;&#x0925; &#x0915;&#x0930;&#x0947; &#x0905;&#x092A;&#x0928;&#x0947; &#x0939;&#x093E;&#x0909;&#x0938; &#x091F;&#x0948;&#x0915;&#x094D;&#x0938; &#x0915;&#x093E; &#x092D;&#x0941;&#x0917;&#x0924;&#x093E;&#x0928;</div></marquee>
-             --><br />
+<br />
 
 <!--=========================================content=============================================-->
 			  <section id="content">
