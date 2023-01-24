@@ -455,7 +455,7 @@ function removeSpacess(string){
     // Once the container has finished, the scroll appears
     if ($('#container').hasClass('loaded')) {
       // It is so that once the container is gone, the entire preloader section is deleted
-      $('#preloader').delay(9000).queue(function() {
+      $('#preloader').delay(19000).queue(function() {
         $(this).remove();
       });}
   }, 10000);});
