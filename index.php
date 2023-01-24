@@ -283,7 +283,7 @@ function Captcha_2(){
          document.getElementById("mainCaptcha2").value = code
        }
 function ValidCaptchaa(){
-     var string1 = removeSpaces(document.getElementById('mainCaptcha2').value);
+     var string1 = removeSpaces(document.getElementById('txtInput2').value);
      var string2 = removeSpaces(document.getElementById('captchaa_code').value);
      var string3 = removeSpaces(document.getElementById('zone_number').value);
      var string4 = removeSpaces(document.getElementById('ward_number').value);
