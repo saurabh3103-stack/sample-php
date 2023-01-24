@@ -133,6 +133,16 @@ if(isset($_POST['submit'])){
     margin: 0px;
     margin-right: 34%;
 }
+#refresh
+{
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 2px;
+    font-size: 24px;
+    color: #f8f9fa;
+    background: #a10000;
+    padding: 5px;
+}
 .indent-top3{
     color:#fff;
 }
@@ -394,12 +404,12 @@ function removeSpacess(string){
                         <div class="margin">
                     <h2 type="text" id="mainCaptcha" class="text-center" style="float: left"></h2>    
                                                                              
-    <p><i class="fa fa-repeat btn" id="refresh" onclick="Captcha();" aria-hidden="true" style="margin-left: 15px;"></i></p>
+    <p><i class="fa fa-repeat" id="refresh" onclick="Captcha();" aria-hidden="true" style="margin-left: 15px;"></i></p>
                                    </div>                            
 									<div class="margin">
 		<p id="mainCaptchaerror"></p>								
         <strong class="d-block color-1 margin-bot2" style="margin-right: 31%;">Please Enter code :</strong>
-        <input id="captcha_code" name="captcha_code" type="text"></td>
+        <input id="captcha_code" name="captcha_code" type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;"></td>
 																		</div>
          <input id="Button1" type="button" class="button-5 mt-3" value="Submit" onclick="ValidCaptcha();"/>                      
 	<!-- <input name="search" type="submit"  value="Submit" style="cursor:pointer;"> -->
@@ -462,7 +472,7 @@ function removeSpacess(string){
                                                                 <div class="margin">
 <h2 type="text" class="text-center" id="mainCaptcha2" style="float:left;"></h2>  
 <p id="mainCaptchaerror2"></p>  
-<p><i class="fa fa-repeat btn" id="refresh" onclick="Captcha_2();" aria-hidden="true" style="margin-left: 15px;"></i></p>                                             
+<p><i class="fa fa-repeat" id="refresh" onclick="Captcha_2();" aria-hidden="true" style="margin-left: 15px;"></i></p>                                             
        </div> 
 									<div class="margin">
 										
