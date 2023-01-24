@@ -121,6 +121,12 @@ if(isset($_POST['submit'])){
     padding: 4px 9px 5px 9px;
     font-size: 26px;}
 
+#mainCaptchaerror
+{
+    color: red;
+    margin: 0px;
+    margin-right: 34%;
+}
 .indent-top3{
     color:#fff;
 }
