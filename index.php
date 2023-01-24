@@ -343,19 +343,13 @@ function removeSpacess(string){
                             <p style="color: #fff;background: #343a40;font-size: 21px; margin: 0px;">Notice</p>
                         </div>
                         <div class="main col-md-11 p-0">
-                            <div class="">
-                                <article class="">
-                                    <nav>
-                                        <ul class="menu" style="margin: -3px;">
-                                            <marquee style="color: #fff;font-size: 21px;padding: 5px;">Pay Your Property Tax Before 31-March-2023</marquee>
-                                        </ul>
-                                    </nav>
-                                </article>
-                            </div>
+                            <ul class="menu">
+                                <marquee style="color: #fff;font-size: 21px;">Pay Your Property Tax Before 31-March-2023</marquee>
+                            </ul>        
                         </div>
                     </div>
                 </header>
-<br />
+<br/>
 <!--=========================================content=============================================-->
 			  <section id="content">
                 	<div class="main">
