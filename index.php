@@ -249,8 +249,10 @@ function ValidCaptcha(){
      var string3 =         removeSpaces(document.getElementById('pid').value);
      if (string1 == string2){
      window.location.href="https://walrus-app-yt4w5.ondigitalocean.app/detailsByPropnonew.php?propert_id="+string3;
-     }else{        
-          return false;
+     }else{   
+         var code="Please Enter Correct Captcha";
+      document.getElementById("mainCaptchaerror").innerHTML = code
+      document.getElementById("mainCaptchaerror").value = code     
           }
 }
 function removeSpaces(string){
@@ -393,7 +395,7 @@ function newPopup(url) {
     <p><i class="fa fa-repeat btn" id="refresh" onclick="Captcha();" aria-hidden="true" style="margin-left: 15px;"></i></p>
                                    </div>                            
 									<div class="margin">
-										
+		<p id="mainCaptchaerror"></p>								
         <strong class="d-block color-1 margin-bot2" style="margin-right: 31%;">Please Enter code :</strong>
         <input id="captcha_code" name="captcha_code" type="text"></td>
 																		</div>
