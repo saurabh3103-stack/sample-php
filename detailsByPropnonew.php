@@ -526,11 +526,11 @@ padding: 0px 0px 0px 9px;
                                 </table>
                                          <div class="text-right">
                                          <button class="pay-now bodyy-content" style="padding: 7px 18px 7px 18px;" onclick="window.print()">Print</button>
-                                     </div>
-                                 <form  method="post"  class="text-right mb-4">
+                                            <form  method="post"  class="text-right mb-4">
                                     <input type="hidden" name="pid" value="'    .$array_data['gisId'] .'">
                                             <a href="payment.php?propert_id='.$array_data['gisId'].'" class="pay-now" name="search">Pay Now</a>
                                     </form>
+                                     </div>
                                 </div>
       
 
