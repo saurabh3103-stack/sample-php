@@ -1,17 +1,15 @@
 <?php
-session_start();
-$captch=$_SESSION['captch'];
-$captcha_code=$_SESSION['captcha_codee'];
-if($captcha_code==$captch)
-{
-        $zone=$_SESSION['zone_number'];
-        $hno=$_SESSION['hno'];
-        $address=$_SESSION['address'];      
-        $ward=$_SESSION['ward_number'];
-        $name=$_SESSION['name'];
-        $chk=$_SESSION['chak_number'];
+$zone=$_REQUEST['zone'];
+$ward=$_REQUEST['Ward'];
+$chk=$_REQUEST['chk'];
+$hno=$_REQUEST['hno'];
+$name=$_REQUEST['name'];
+echo $zone;
+echo $ward;
+echo $chk;
+echo $hno;
+echo $name;
 $curl = curl_init();
-
 curl_setopt_array($curl, array(
             CURLOPT_URL => 'https://knndigitalpayment.com/AppSearchpid.php',
             CURLOPT_RETURNTRANSFER => true,
@@ -34,9 +32,6 @@ $responsee;
 $jsonn = json_decode($responsee, true);
 $err=curl_error($curl);
 
-} 
- 
-session_destroy();
 ?>
 <!DOCTYPE html>
 <html lang="en">
