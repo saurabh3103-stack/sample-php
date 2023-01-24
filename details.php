@@ -278,7 +278,7 @@ to {
       $('#preloader').delay(7000).queue(function() {
         $(this).remove();
       });}
-  }, 11000);});
+  }, 9000);});
 </script>
 </head>
 <body id="page1" oncontextmenu="return false" style="background: #fff8c6;">
