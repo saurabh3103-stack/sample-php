@@ -234,7 +234,7 @@ if(isset($_POST['submit'])){
 
 /* Preloader */
 .container-preloader {
-    align-items:center; cursor:none; display:flex; height:100%;
+    align-items:center; display:flex; height:100%;
   justify-content:center; position:fixed; left:0; top:0; width:100%; z-index:900;
 }
 .container-preloader .animation-preloader {
