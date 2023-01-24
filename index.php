@@ -453,7 +453,7 @@ function removeSpacess(string){
        </div> 
 									<div class="margin">
 										
-        <strong class="color-1" style="margin-left: -48%;">Please Enter code :</strong>
+        <strong class="color-1">Please Enter code :</strong>
         <br>
         <input id="captchaa_code" name="captcha_code" type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;"></td>
 <br/>
