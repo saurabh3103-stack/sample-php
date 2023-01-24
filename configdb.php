@@ -1,5 +1,5 @@
 <?php
-$server="db-mysql-blr1-63524-do-user-13373407-0.b.db.ondigitalocean.com";
+$server="255.53.241.190";
 $user="doadmin";
 $password="AVNS_LEZb0BBopqzURNBhFRI";
 $database="defaultdb";
