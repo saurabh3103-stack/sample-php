@@ -80,7 +80,7 @@ $jsonn = json_decode($responsee, true);
 $err=curl_error($curl);
 if($jsonn)
 {
-    print_r($jsonn);
+   // print_r($jsonn);
 }
 ?>
 <!DOCTYPE html>
@@ -567,7 +567,8 @@ padding: 0px 0px 0px 9px;
 '>
                                     <td> Property ID </td>
                                     <td> Zone</td>
-                                    <td> Deposite Date	& Time </td>
+                                    <td> Deposite Date</td>
+                                    <td> Deposite Time</td>
                                     <td> Transaction ID </td>
                                     <td> Receipt No. </td>
                                     <td> Deposite Amount</td>
@@ -583,7 +584,8 @@ padding: 0px 0px 0px 9px;
                            <tr>
                                     <td> ".$ward_detals['PropertyId']." </td>
                                     <td> ".$ward_detals['zone']." </td>
-                                    <td> ".$ward_detals['Txndate']['date']." </td>
+                                    <td> ".$ward_detals['Txndate']." </td>
+                                    <td> ".$ward_detals['Txntime']." </td>
                                     <td> ".$ward_detals['Txnid']." </td>
                                     <td> </td>
                                     <td> Rs. ".$ward_detals['CollectionAmt']." </td>
