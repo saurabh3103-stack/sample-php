@@ -327,19 +327,6 @@ function removeSpacess(string){
      return string.split(' ').join('');
 }
 </script>
-
-	<!--[if lt IE 7]>
-    <div style=' clear: both; text-align:center; position: relative;'>
-        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-        	<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-        </a>
-    </div>
-	<![endif]-->
-    <!--[if lt IE 9]>
-		<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
-   		<script type="text/javascript" src="js/html5.js"></script>
-	<![endif]-->
-
 </head>
 <body id="page1" oncontextmenu="return false"  onload="Captcha(); Captcha_2();">
 <!--=========================================header=============================================-->
@@ -411,12 +398,7 @@ function removeSpacess(string){
         <strong class="d-block color-1 margin-bot2" style="margin-right: 31%;">Please Enter code :</strong>
         <input id="captcha_code" name="captcha_code" type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;"></td>
 																		</div>
-         <input id="Button1" type="button" class="button-5 mt-3" value="Submit" onclick="ValidCaptcha();"/>                      
-	<!-- <input name="search" type="submit"  value="Submit" style="cursor:pointer;"> -->
-
-
-																				<!--<a href="#" class="button-5" onClick="document.getElementById('form-3').submit()">Submit</a>-->
-																			</form>
+         <input id="Button1" type="button" class="button-5 mt-3" value="Submit" onclick="ValidCaptcha();"/>                      				</form>
 				                                                     </div>
                                                         		</div>
                                                         		<div class="col-lg-6 col-md-6 col-sm-12">
