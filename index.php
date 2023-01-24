@@ -484,7 +484,7 @@ function newPopup(url) {
         <br>
         <input id="captchaa_code" name="captcha_code" type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;"></td>
 
-       <input id="Button2" type="button" class="button-5" value="Submit" style="margin-top: 15px;" onclick="ValidCaptchaa();"/>
+<input id="Button2"type="button"class="button-5"value="Submit"style="margin-top:15px;"onclick="ValidCaptchaa();"/>
 						                  												</div><!-- 
 <input type="submit" >&gt; -->
 															
