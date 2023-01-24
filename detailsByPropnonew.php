@@ -118,7 +118,7 @@ document.onkeydown = function(e) {
 <script language="javascript">
 document.onmousedown=disableclick;
 status="Right Click Disabled";
-Function disableclick(event)
+function disableclick(event)
 {
   if(event.button==2)
    {
@@ -151,22 +151,9 @@ WindowObject.close();
 
 </script>
 
-	<!--[if lt IE 7]>
-    <div style=' clear: both; text-align:center; position: relative;'>
-        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-        	<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-        </a>
-    </div>
-	<![endif]-->
-    <!--[if lt IE 9]>
-		<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
-   		<script type="text/javascript" src="js/html5.js"></script>
-	<![endif]-->
 <style>
 .grid_12{margin-left:0px;}
-</style>
-<style>
-      @media only print {
+     @media only print {
          body {
             visibility: hidden;
          }
@@ -179,16 +166,6 @@ h3.text-color.bill-heading{margin: 19px;}
 @media only screen and (max-width: 767px) {
 h3.text-color.bill-heading{margin: 0 !important;}
 }
-   </style>
-</head>
-<body id="page1" oncontextmenu="return false" style="
-    background: #fff8c6;
-">
-<!--=========================================header=============================================-->
-                <div class="hover_bkgr_fricc">
-    <span class="helper"></span>
-</div>
-<style>
 /* Popup box BEGIN */
 .hover_bkgr_fricc{
     background:rgba(0,0,0,.4); 
@@ -271,51 +248,31 @@ padding: 0px 0px 0px 9px;
 .payment_historyy {padding: 5px !important;}
 .text-right a:hover{color:#fff;}
 .payment_historyyy td{padding:.75rem !important;}
-</style>
+   </style>
+</head>
+<body id="page1" oncontextmenu="return false" style="
+    background: #fff8c6;
+">
+<!--=========================================header=============================================-->
+                <div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+</div>
 <header id="header">
                     <div class="main" style="text-align:center;">
-<img src="images/Header.JPG" style="max-width:100%;"/>
+<img src="images/Header.JPG" class="img-fluid" />
                         <div class="clear"></div>
                     </div>
-                    <div class="tail-1 border-1">
-                          <div class="main">
-                            <div class="">
-                                <article class="">
-                                    <nav>
-                                        <ul class="menu">
-                                            <marquee style="
-    color: #fff;
-    font-size: 21px;
-    padding: 5px;
-">Pay Your Property Tax Before 31-March-2023</marquee>
-                                            <!--<li class="first"><a class="active" href="index.php">Home<span></span></a></li>-->
-                                            <!--<li><a href="http://kmc.up.nic.in" target="_blank" class="" style="width: 110px;">About us<span></span></a></li>-->
-<!--<li><a href="download_receipt.php" style="width: 180px;">Download Receipt<span></span></a></li>-->
-<!--<li><a href="#" style="width: 160px;">Raise a Concern<span></span></a></li>-->
-<!--<li><a href="contact_us.php" style="width: 100px;">Contact<span></span></a></li>-->
-
-                                        </ul>
-                                        <div class="clear"></div>
-                                    </nav>
-                                </article>
-                                <div class="clear"></div>
-                            </div>
+                   <div class="tail-1 row"style="margin: 0px;">
+                        <div class="col-md-1" style="background: #343a40;">
+                            <p style="color: #fff;background: #343a40;font-size: 21px; margin: 0px;">Notice</p>
+                        </div>
+                        <div class="main col-md-11 p-0">
+                            <ul class="menu">
+                                <marquee style="color: #fff;font-size: 21px;" class="mt-1">Pay Your Property Tax Before 31-March-2023</marquee>
+                            </ul>        
                         </div>
                     </div>
                 </header>
-        <script>
-        //             var date=new Date();
-        //             var current_date = date.getDate()+"-"+(date.getMonth()+1)+"-"+date.getFullYear();
-        //             current_month=date.getDate()+"-"+date.getMonth()+1;
-        //             if(current_month==05-01)
-        //             {
-        //                   year=date.getFullYear() + 1;
-        //                   console.log(year);   
-        //             }
-        //             else{
-        //                 console.log(date.getFullYear());
-        //             }
-                 </script>
 <!--=========================================content=============================================-->
 			  </br>
               <section class="cssInp">
