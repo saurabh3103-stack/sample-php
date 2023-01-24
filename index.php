@@ -432,7 +432,7 @@ function newPopup(url) {
 																	<div class="row">
 																	    <div class="col-md-6">
 																			<strong class="d-block color-1 margin-bot2">Select Zone<span>*</span>:</strong>
-         <select name="zone_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
+         <select id="zone_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
 <option value="0">=Zone=</option>
 <option value="1">1::Civil Lines</option> 
 <option value="2">2::Krishna Nagar</option> 
@@ -443,7 +443,7 @@ function newPopup(url) {
 </select>																</div>
 																		<div class="col-md-6">
 																			<strong class="d-block color-1 margin-bot2">Enter Ward No<span>*</span>:</strong>
-																			<input type="number" name="ward_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
+							<input type="number" id="ward_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
 													<span id="blockLoader"></span>	
 																		</div>
 																																			
@@ -451,14 +451,14 @@ function newPopup(url) {
 																	</div>
 																	<div class="row">
 																	
-																		<div style="height:10px;"></div>
-																		<div class="col-md-6">
-																			<strong class="d-block color-1 margin-bot2">Enter Chak Number:</strong>
-																		<input type="number" name="chak_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
+						<div style="height:10px;"></div>
+	<div class="col-md-6">
+		<strong class="d-block color-1 margin-bot2">Enter Chak Number:</strong>
+<input type="number" id="chak_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
 																		</div>
 																		<div class="col-md-6">
 																			<strong class="d-block color-1 margin-bot2">Select House No.:</strong>
-																			<input type="text" name="address" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">	
+			<input type="text" id="address" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">	
 																		</div>
 																																		
 																		<div class="clear"></div>
@@ -467,7 +467,7 @@ function newPopup(url) {
 
 																		<div class="col-md-6">
 																			<strong class="d-block color-1 margin-bot2">Enter Name:</strong>
-																			<input type="text" name="name" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
+						<input type="text" id="name" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
 													<span id="blockLoader"></span>	
 																		</div>
 																		
