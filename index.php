@@ -508,10 +508,10 @@ Please use Kanpur Property Tax Management System for all your property tax issue
     <!--==============================footer================================-->
     <div>
         <div class="main container">
-            <div class="">
+            <div class="p-4">
                 <div class="wrapper">
                     <article class="">
-                    <div class="">
+                    <div class="p-3">
                    
                     </div>
                         <center><span class="d-block" style="
@@ -526,7 +526,7 @@ For any query regarding this application Please Contact Kanpur Nagar Nigam, emai
             </div>
         </div>
     </div>
-    <footer style="background: #a10000;color: #fff;padding: 12px;" class="text-center"">
+    <footer style="background: #a10000;color: #fff;padding: 5px;" class="text-center"">
         Copyright© Kanpur Nagar Nigam Kanpur All rights reserved.
     </footer>	
 </body>
