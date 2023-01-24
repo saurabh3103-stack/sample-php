@@ -259,49 +259,28 @@ else {
                     </div>
                 </section>
 	<!--==============================footer================================-->
-    <footer>
+    <div>
         <div class="main container">
-        	<div class="">
+            <div class="p-4">
                 <div class="wrapper">
                     <article class="">
-					<div class="">
-                       
+                    <div class="p-3">
+                   
                     </div>
-                    	<center><span class="d-block" style="
+                        <center><span class="d-block" style="
     color: #a10000;
-">Disclaimer - Content/Data on tdis application is published and managed by Kanpur Nagar Nigam.<br />
-For any query regarding tdis application Please Contact Kanpur Nagar Nigam, email-itmekmc@gmail.com </span></center>
-<center><strong>.</strong></center>
+"><strong>Disclaimer -</strong> Content on this website is published and managed by Kanpur Nagar Nigam.
+Contents Provided by Nagar Nigam, Kanpur<br />
+For any query regarding this application Please Contact Kanpur Nagar Nigam, email-kanpur_nagar.nigam@yahoo.co.in</span></center>
+
                         <!--{%FOOTER_LINK} -->
                     </article>
                 </div>
             </div>
         </div>
+    </div>
+    <footer style="background: #a10000;color: #fff;padding: 5px;" class="text-center"">
+        Copyright© Kanpur Nagar Nigam Kanpur All rights reserved.
     </footer>
-<script>
-
-function setCookied(name,value,days) {
-    var expires = "";
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days*24*60*60*1000));
-        expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "")  + expires + "; patd=/";
-}
-function getCookied(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.lengtd;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.lengtd);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.lengtd,c.lengtd);
-    }
-    return null;
-}
-function eraseCookie(name) {
-    document.cookie = name+'=; Max-Age=-99999999;';
-}
-</script>
 </body>
 </html>
