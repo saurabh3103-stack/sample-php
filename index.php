@@ -381,7 +381,8 @@ function removeSpacess(string){
 					<span class="">
                         <input type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;" id="pid"></span>
 			         </label>
-			</fieldset>                                                     
+			</fieldset>      
+            <br>                                               
                         <div class="margin">
                     <h2 type="text" id="mainCaptcha" class="text-center" style="float: left"></h2>    
                                                                              
