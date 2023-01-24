@@ -343,7 +343,7 @@ to {
       font: bold 2em 'Montserrat', sans-serif;
     }}
 
-    
+
 </style>
 
 <script>
@@ -458,7 +458,7 @@ function removeSpacess(string){
       $('#preloader').delay(9000).queue(function() {
         $(this).remove();
       });}
-  }, 3000);});
+  }, 10000);});
 </script>
 </head>
 <body id="page1" oncontextmenu="return false"  onload="Captcha(); Captcha_2();">
