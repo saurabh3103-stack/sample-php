@@ -115,11 +115,11 @@ if(isset($_POST['search']))
 #mainCaptcha{    background: #fff;
     width: 58%;
     padding: 4px 9px 5px 9px;
-    font-size: 28px;}
+    font-size: 26px;}
     #mainCaptcha2{    background: #fff;
     width: 48%;
     padding: 4px 9px 5px 9px;
-    font-size: 28px;}
+    font-size: 26px;}
 
 .indent-top3{
     color:#fff;
@@ -250,7 +250,7 @@ function ValidCaptcha(){
      if (string1 == string2){
         alert(string3);
             return true;
-            window.location.href = "detailsByPropnonew.php?propert_id="+string3;
+            window.location.href ="https://walrus-app-yt4w5.ondigitalocean.app/detailsByPropnonew.php?propert_id="+string3;
      }else{        
           return false;
           }
@@ -389,8 +389,8 @@ function newPopup(url) {
 			         </label>
 			</fieldset>
                                                                             
-                                   <div class="margin">
-                                                         <h2 type="text" id="mainCaptcha" style="float: left"></h2>    
+                        <div class="margin">
+                    <h2 type="text" id="mainCaptcha" class="text-center" style="float: left"></h2>    
                                                                              
     <p><i class="fa fa-repeat btn" id="refresh" onclick="Captcha();" aria-hidden="true" style="margin-left: 15px;"></i></p>
                                    </div>                            
@@ -409,9 +409,7 @@ function newPopup(url) {
                                                         		</div>
                                                         		<div class="col-lg-6 col-md-6 col-sm-12">
                                                         			<div>
-                                                         	<h3 class="margin-bot1" style="
-    color: #fff;
-">Login With Details</h3>
+<h3 class="margin-bot1" style="color: #fff;">Login With Details</h3>
     										<form action="#" method="post">
     											 <?php if(isset($msg)){?>
     <tr>
@@ -465,7 +463,7 @@ function newPopup(url) {
 																</fieldset>
 																<br>
                                                                 <div class="margin">
-            										           <h2 type="text" id="mainCaptcha2" style="float:left;"></h2>    
+        <h2 type="text" class="text-center" id="mainCaptcha2" style="float:left;"></h2>    
        <p><i class="fa fa-repeat btn" id="refresh" onclick="Captcha_2();" aria-hidden="true" style="margin-left: 15px;"></i></p>                                             
        </div> 
 									<div class="margin">
