@@ -80,7 +80,7 @@ $jsonn = json_decode($responsee, true);
 $err=curl_error($curl);
 if($jsonn)
 {
-    //print_r($jsonn);
+    print_r($jsonn);
 }
 ?>
 <!DOCTYPE html>
