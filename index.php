@@ -505,7 +505,6 @@ Please use Kanpur Property Tax Management System for all your property tax issue
                     </div>
                 </section>
 	<!--==============================footer================================-->
-    <!--==============================footer================================-->
     <div>
         <div class="main container">
             <div class="p-4">
