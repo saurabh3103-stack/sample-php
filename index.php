@@ -127,6 +127,12 @@ if(isset($_POST['submit'])){
     margin: 0px;
     margin-right: 34%;
 }
+#mainCaptchaerror2
+{
+    color: red;
+    margin: 0px;
+    margin-right: 34%;
+}
 .indent-top3{
     color:#fff;
 }
@@ -302,7 +308,9 @@ function ValidCaptchaa(){
             window.location.href="https://walrus-app-yt4w5.ondigitalocean.app/details.php?zone="+string3+"&Ward="+string4+"&chk="+string6+"&hno="+string7+"&name="+string5;
          }   
      }else{        
-          return false;
+          var code="Please Enter Correct Captcha";
+      document.getElementById("mainCaptchaerror2").innerHTML = code
+      document.getElementById("mainCaptchaerror2").value = code     
           }
 }
 function removeSpacess(string){
@@ -333,44 +341,24 @@ function removeSpacess(string){
 <img src="images/Header.JPG" class="img-fluid" />
                         <div class="clear"></div>
                     </div>
-                    <div class="tail-1 border-1">
-                        <div class="main">
+                   <div class="tail-1 row"style="margin: 0px;">
+                        <div class="col-md-1" style="background: #343a40;">
+                            <p style="color: #fff;background: #343a40;font-size: 21px; margin: 0px;">Notice</p>
+                        </div>
+                        <div class="main col-md-11">
                             <div class="">
                                 <article class="">
                                     <nav>
-                                        <ul class="menu">
-                                            <marquee style="
-    color: #fff;
-    font-size: 21px;
-    padding: 5px;
-">Pay Your Property Tax Before 31-March-2023</marquee>
-                                            <!--<li class="first"><a class="active" href="index.php">Home<span></span></a></li>-->
-                                            <!--<li><a href="http://kmc.up.nic.in" target="_blank" class="" style="width: 110px;">About us<span></span></a></li>-->
-<!--<li><a href="download_receipt.php" style="width: 180px;">Download Receipt<span></span></a></li>-->
-<!--<li><a href="#" style="width: 160px;">Raise a Concern<span></span></a></li>-->
-<!--<li><a href="contact_us.php" style="width: 100px;">Contact<span></span></a></li>-->
-
+                                        <ul class="menu" style="margin: -3px;">
+                                            <marquee style="color: #fff;font-size: 21px;padding: 5px;">Pay Your Property Tax Before 31-March-2023</marquee>
                                         </ul>
-                                        <div class="clear"></div>
                                     </nav>
                                 </article>
-                                <div class="clear"></div>
                             </div>
                         </div>
                     </div>
                 </header>
-
-
-			<!--	<marquee behavior="scroll" direction="left" class="scroll-left"><div style="margin-top:10px;color: #FF0000;font-size:22px;">&#x090F;&#x0915; &#x092E;&#x0941;&#x0936;&#x094D;&#x0924; &#x0938;&#x092E;&#x093E;&#x0927;&#x093E;&#x0928; &#x092F;&#x094B;&#x091C;&#x0928;&#x093E; (OTS) &#x0915;&#x0947; &#x0905;&#x0928;&#x094D;&#x0924;&#x0930;&#x094D;&#x0917;&#x0924; 100% &#x092C;&#x094D;&#x092F;&#x093E;&#x091C; &#x092E;&#x093E;&#x092B; &#x0915;&#x0947; &#x0938;&#x093E;&#x0925; &#x0915;&#x0930;&#x0947; &#x0905;&#x092A;&#x0928;&#x0947; &#x0939;&#x093E;&#x0909;&#x0938; &#x091F;&#x0948;&#x0915;&#x094D;&#x0938; &#x0915;&#x093E; &#x092D;&#x0941;&#x0917;&#x0924;&#x093E;&#x0928;</div></marquee>
-             --><br />
-				<script type="text/javascript">
-// Popup window code
-function newPopup(url) {
-	popupWindow = window.open(
-		url,'popUpWindow','height=700,width=1450,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
-}
-</script>
-
+<br />
 <!--=========================================content=============================================-->
 			  <section id="content">
                 	<div class="main">
@@ -394,21 +382,15 @@ function newPopup(url) {
     border-right: 2px solid #ffa300;
 ">
                                                         			<div>
-				                                                         	<h3 class="margin-bot1" style="color: #fff;">Login By Property ID</h3>
-																			<form id="form-3" method="post">
-																			     <?php if(isset($msgg)){?>
-    <tr>
-      <td colspan="2" align="center" valign="top"><?php echo $msgg;?></td>
-    </tr>
-    <?php } ?>
+		<h3 class="margin-bot1" style="color: #fff;">Login By Property ID</h3>
+			<form id="form-3" method="post">
 			<fieldset class="margin">
 				<strong class="d-in-block color-1 margin-bot2">Enter your property number:</strong>
 					<label class="d-block margin-bot2">
 					<span class="">
                         <input type="text" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;" id="pid"></span>
 			         </label>
-			</fieldset>
-                                                                            
+			</fieldset>                                                     
                         <div class="margin">
                     <h2 type="text" id="mainCaptcha" class="text-center" style="float: left"></h2>    
                                                                              
@@ -430,16 +412,11 @@ function newPopup(url) {
                                                         		<div class="col-lg-6 col-md-6 col-sm-12">
                                                         			<div>
 <h3 class="margin-bot1" style="color: #fff;">Login With Details</h3>
-    										<form action="#" method="post">
-    											 <?php if(isset($msg)){?>
-    <tr>
-      <td colspan="2" align="center" valign="top"><?php echo $msg;?></td>
-    </tr>
-    <?php } ?>
-																<fieldset class="margin">
-																	<div class="row">
-																	    <div class="col-md-6">
-																			<strong class="d-block color-1 margin-bot2">Select Zone<span>*</span>:</strong>
+    <form action="#" method="post">
+		<fieldset class="margin">
+	     <div class="row">
+		   <div class="col-md-6">
+				<strong class="d-block color-1 margin-bot2">Select Zone<span>*</span>:</strong>
          <select id="zone_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
 <option value="0">=Zone=</option>
 <option value="1">1::Civil Lines</option> 
@@ -448,14 +425,14 @@ function newPopup(url) {
 <option value="4">4::Motijheel</option> 
 <option value="5">5::Govind Nagar</option> 
 <option value="6">6::Mariumpur</option> 
-</select>																</div>
-																		<div class="col-md-6">
-																			<strong class="d-block color-1 margin-bot2">Enter Ward No<span>*</span>:</strong>
-							<input type="number" id="ward_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
-													<span id="blockLoader"></span>	
-																		</div>
-																																			
-																		<div class="clear"></div>
+</select>
+	</div>
+			<div class="col-md-6">
+<strong class="d-block color-1 margin-bot2">Enter Ward No<span>*</span>:</strong>
+<input type="number" id="ward_number" style="width:200px; font-family: Verdana; font-size: 10pt; padding:4px;">
+<span id="blockLoader"></span>	
+	</div>
+<div class="clear"></div>
 																	</div>
 																	<div class="row">
 																	
@@ -483,8 +460,9 @@ function newPopup(url) {
 																</fieldset>
 																<br>
                                                                 <div class="margin">
-        <h2 type="text" class="text-center" id="mainCaptcha2" style="float:left;"></h2>    
-       <p><i class="fa fa-repeat btn" id="refresh" onclick="Captcha_2();" aria-hidden="true" style="margin-left: 15px;"></i></p>                                             
+<h2 type="text" class="text-center" id="mainCaptcha2" style="float:left;"></h2>  
+<p id="mainCaptchaerror2"></p>  
+<p><i class="fa fa-repeat btn" id="refresh" onclick="Captcha_2();" aria-hidden="true" style="margin-left: 15px;"></i></p>                                             
        </div> 
 									<div class="margin">
 										
