@@ -355,7 +355,7 @@ function removeSpacess(string){
                         <div class="col-md-1" style="background: #343a40;">
                             <p style="color: #fff;background: #343a40;font-size: 21px; margin: 0px;">Notice</p>
                         </div>
-                        <div class="main col-md-11">
+                        <div class="main col-md-11 p-0">
                             <div class="">
                                 <article class="">
                                     <nav>
