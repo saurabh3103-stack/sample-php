@@ -153,8 +153,8 @@ WindowObject.close();
 
 <style>
 .grid_12{margin-left:0px;}
-     @media only print {
-         body {
+    @media only print {
+         .bodyy-content {
             visibility: hidden;
          }
          .cssInp {
@@ -250,7 +250,7 @@ padding: 0px 0px 0px 9px;
 .payment_historyyy td{padding:.75rem !important;}
    </style>
 </head>
-<body id="page1" oncontextmenu="return false" style="
+<body id="page1" class="bodyy-content" oncontextmenu="return false" style="
     background: #fff8c6;
 ">
 <!--=========================================header=============================================-->
@@ -550,7 +550,7 @@ padding: 0px 0px 0px 9px;
 	?>
 	 <?php
         if($jsonn){
-        echo "<div class='container'>";
+        echo "<div class='container bodyy-content'>";
         echo "<div class='table-responsive'>
         <table class='table border table-hover payment_historyyy'>
         <tr style='
@@ -601,7 +601,7 @@ padding: 0px 0px 0px 9px;
         </table>
         </div>
          <div class='text-right'>
-                                         <button class='pay-now' style='padding: 7px 18px 7px 18px;' onclick='window.print()'>Print</button>
+                                         <button class='pay-now bodyy-content' style='padding: 7px 18px 7px 18px;' onclick='window.print()'>Print</button>
                                      </div>
         </div>";
     echo "<br><br>";
