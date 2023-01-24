@@ -1,34 +1,35 @@
-<!-- <?php //session_start();
+ <?php session_start();
 
-//if(isset($_POST['submit'])){
-//	$chak_numberr=$_POST['chak_number'];
-  //  if(empty($chak_numberr))
+if(isset($_POST['submit'])){
+	$chak_numberr=$_POST['chak_number'];
+  if(empty($chak_numberr))
     {
-      //  $chak_number="Select";
+      $chak_number="Select";
     }
-    //else
+    else
     {
-      //  $chak_number=$chak_numberr;
+        $chak_number=$chak_numberr;
     }
-   // $captch=$_POST['captcha_code'];
-    //$hno = $_POST['address'];
-    //$zone = $_POST['zone_number'];
-    //$ward = $_POST['ward_number'];
-    ///$name = $_POST['name'];
-    //$chk = $chak_number;
-	// code for check server side validation
-	// if(empty($_SESSION['captcha_codee'] ) || strcasecmp($_SESSION['captcha_codee'], $_POST['captcha_code']) != 0){  
-	// 	$msg="<span style='color:red'>Please Enter the correct Captcha!</span>";// Captcha verification is incorrect.		
-	// }else{// Captcha verification is Correct. Final Code Execute here!
-	//	$_SESSION['hno']=$hno;
-	//	$_SESSION['address']=$address;		
-	//	$_SESSION['ward_number']=$ward;
-	//	$_SESSION['zone_number']=$zone;
-	//	$_SESSION['name']=$name;
-	//	$_SESSION['chak_number']=$chk;
-	//	$_SESSION['captch']= $captch;
-	//	header("location:details.php");	
-	// }
+   $captch=$_POST['captcha_code'];
+    $hno = $_POST['address'];
+    $zone = $_POST['zone_number'];
+    $ward = $_POST['ward_number'];
+    $name = $_POST['name'];
+    $chk = $chak_number;
+	 code for check server side validation
+	 if(empty($_SESSION['captcha_codee'] ) || strcasecmp($_SESSION['captcha_codee'], $_POST['captcha_code']) != 0){  
+	 	$msg="<span style='color:red'>Please Enter the correct Captcha!</span>";// Captcha verification is incorrect.		
+	 }else{
+     // Captcha verification is Correct. Final Code Execute here!
+		$_SESSION['hno']=$hno;
+		$_SESSION['address']=$address;		
+		$_SESSION['ward_number']=$ward;
+		$_SESSION['zone_number']=$zone;
+		$_SESSION['name']=$name;
+		$_SESSION['chak_number']=$chk;
+		$_SESSION['captch']= $captch;
+		header("location:details.php");	
+	 }
 }	
 
 // if(isset($_POST['search']))
@@ -50,7 +51,6 @@
 // // '>*Please Fill Correct Property ID</p>";
 // // }
 ?>
- -->
 
 <!DOCTYPE html>
 <html lang="en">
