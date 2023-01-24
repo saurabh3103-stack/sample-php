@@ -290,9 +290,10 @@ function ValidCaptchaa(){
      var string4 = removeSpaces(document.getElementById('ward_number').value);
      var string5 = removeSpaces(document.getElementById('name').value);
      var string6 = removeSpaces(document.getElementById('chak_number').value);
+     var string7 = removeSpaces(document.getElementById('address').value);
      if (string1 == string2){
-        alert(string1+"<br>"+string2+"<br>"+string3+"<br>"+string4+"<br>"+string5+"<br>"+string6);
-      window.location.href="https://walrus-app-yt4w5.ondigitalocean.app/details.php?propert_id="+string3;
+    alert(string1+"<br>"+string2+"<br>"+string3+"<br>"+string4+"<br>"+string5+"<br>"+string6);
+    window.location.href="https://walrus-app-yt4w5.ondigitalocean.app/details.php?zone="+string3+"&Ward="+string4+"&chk="+string6+"&hno="+string7+"&name="+string5;
      }else{        
           return false;
           }
