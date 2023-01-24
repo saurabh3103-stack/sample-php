@@ -646,7 +646,11 @@ Please use Kanpur Property Tax Management System for all your property tax issue
                                     <div class="bg-4 border_r-3 border-3">
                                     	<div class="indent2">
                                         	<ul class="ul-2 margin-bot6">
-                                            	<li><span>1.</span><a href="http://knnpropertytax.com/download_receipt.php">Download Receipt (POS/BHIM)</a></li>
+                                            	<li><span>1.</span><a href="index.php">Download Receipt (POS/BHIM)</a></li>
+                                                <li><span>2.</span><a href="https://kmc.up.nic.in/">Kanpur Nagar Nigam</a></li>
+                                                <li><span>3.</span><a href="http://jalkalkanpur.in/">JalKal Vibhag Kanpur</a></li>
+                                                <li><span>4.</span><a href="https://ceouttarpradesh.nic.in/">Election Commission</a></li>
+                                                <li><span>5.</span><a href="https://up.gov.in/en">UP Government</a></li>
                                             </ul>
                                         </div>
                                     </div>
