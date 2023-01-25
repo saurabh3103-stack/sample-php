@@ -73,7 +73,7 @@ curl_setopt_array($curl, array(
             CURLOPT_SSL_VERIFYPEER=> FALSE,
             CURLOPT_SSL_VERIFYHOST=>FALSE,
             CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS => array('GisId' => $house_id),
+            CURLOPT_POSTFIELDS => array('GisId' => $id),
             CURLOPT_HTTPHEADER => array(
                         'X-TP-ApiKey: c77f5eb4d7d525855522d7ac65c5487d'
             ),
