@@ -50,14 +50,19 @@ if ($success === true)
             $curl = curl_init();
             curl_setopt_array($curl, array(
             CURLOPT_URL => 'https://knndigitalpayment.com/webUpdateInfo.php',
-            CURLOPT_RETURNTRANSFER => true,
+           CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
             CURLOPT_TIMEOUT => 0,
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_SSL_VERIFYPEER=> FALSE,
+            CURLOPT_SSL_VERIFYHOST=>FALSE,
             CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS => array('GisId' => $id,'plTransactionId' => $payment_id,'paymentMode' => '1','transactionTime' => $datee,'transactionAmount' => ''),
+            CURLOPT_POSTFIELDS => array(
+                'GisId' => $id,'plTransactionId' => $payment_id,
+                'paymentMode' => '1','transactionTime' => $datee,
+                'transactionAmount' => $price),
             CURLOPT_HTTPHEADER => array(
                         'X-TP-ApiKey: c77f5eb4d7d525855522d7ac65c5487d'
             ),
