@@ -60,6 +60,8 @@ function convertNumberToWordsForIndia($number){
 }
 //require('configdb.php');
 $id=$_REQUEST['property_id'];
+$razorpay_order_id=$_SESSION['razorpay_order_id'];
+$razorpay_payment_id=$_SESSION['razorpay_payment_id'];
 $curl = curl_init();
 
 curl_setopt_array($curl, array(

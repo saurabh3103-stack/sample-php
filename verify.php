@@ -73,7 +73,7 @@ $json = json_decode($response, true);
     {
          $_SESSION['razorpay_order_id']=$razorpay_order_id;
          $_SESSION['razorpay_payment_id']=$razorpay_payment_id;
-         header("location:payment_receipt.php?property_id=$id");
+         header("location:payment_receipt.php?property_id=$id&rec_id=$razorpay_order_id&trans_id=$razorpay_payment_id&date=$datee&amt=$price");
     }
     else
     {
