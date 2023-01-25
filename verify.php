@@ -43,7 +43,7 @@ if ($success === true)
             $razorpay_order_id = $_SESSION['razorpay_order_id'];
             $razorpay_payment_id = $_POST['razorpay_payment_id'];
             $email = $_SESSION['email'];
-            $id=$_SESSION['proid'];
+            $id=$_SESSION['house_id'];
             $mobile = $_SESSION['mobile'];
             $price = $_SESSION['price'];
             $receipt=$_SESSION['receipt'];
