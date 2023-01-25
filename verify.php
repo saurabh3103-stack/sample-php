@@ -68,9 +68,18 @@ if ($success === true)
             ),
 ));
 $response = curl_exec($curl);
-curl_close($curl);
-echo $response;
-
+$json = json_decode($response, true);
+    if($json["status"]==0)
+    {
+         $_SESSION['razorpay_order_id']=$razorpay_order_id;
+         $_SESSION['razorpay_payment_id']=$razorpay_payment_id;
+         header("location:payment_receipt.php?property_id=$id");
+    }
+    else
+    {
+        $html = "<p>Your payment failed</p>
+             <p>{$error}</p>";       
+    }
 }
 else
 {
