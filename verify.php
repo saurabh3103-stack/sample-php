@@ -37,22 +37,35 @@ if (empty($_POST['razorpay_payment_id']) === false)
 
 if ($success === true)
 {
-    $datee=date("d-m-Y");
-    $payment_id=$_POST['razorpay_payment_id'];
-    $house_id= $_SESSION['house_id'];
-    $razorpay_order_id = $_SESSION['razorpay_order_id'];
-    $razorpay_payment_id = $_POST['razorpay_payment_id'];
-    $email = $_SESSION['email'];
-    $mobile = $_SESSION['mobile'];
-    $price = $_SESSION['price'];
-    $receipt=$_SESSION['receipt'];
-    $sql = "INSERT INTO `transaction` (`order_id`, `razorpay_payment_id`, `status`, `email`, `price`,`receipt`,`date`,`mobile`) VALUES ('$razorpay_order_id', '$razorpay_payment_id', 'Success', '$email', '$price','$receipt','$datee','$mobile')";
-    if(mysqli_query($conn, $sql)){
-        header("location:payment_receipt.php?receipt=$receipt");
-    }
-    // $html="Payment ID: {$payment_id}
-    // House_ID{$house_id}";
-    
+            $datee=date("d-m-Y");
+            $payment_id=$_POST['razorpay_payment_id'];
+            $house_id= $_SESSION['house_id'];
+            $razorpay_order_id = $_SESSION['razorpay_order_id'];
+            $razorpay_payment_id = $_POST['razorpay_payment_id'];
+            $email = $_SESSION['email'];
+            $id=$_SESSION['proid'];
+            $mobile = $_SESSION['mobile'];
+            $price = $_SESSION['price'];
+            $receipt=$_SESSION['receipt'];
+            $curl = curl_init();
+            curl_setopt_array($curl, array(
+            CURLOPT_URL => 'https://knndigitalpayment.com/webUpdateInfo.php',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => array('GisId' => $id,'plTransactionId' => $payment_id,'paymentMode' => '1','transactionTime' => $datee,'transactionAmount' => ''),
+            CURLOPT_HTTPHEADER => array(
+                        'X-TP-ApiKey: c77f5eb4d7d525855522d7ac65c5487d'
+            ),
+));
+$response = curl_exec($curl);
+curl_close($curl);
+echo $response;
+
 }
 else
 {
