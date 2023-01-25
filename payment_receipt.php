@@ -59,31 +59,8 @@ function convertNumberToWordsForIndia($number){
     return ucwords(strtolower($number_to_words_string."Rupees ")." Only/-");
 }
 require('configdb.php');
-$receipt=$_REQUEST['receipt'];
-//echo $receipt;
- $sql="SELECT * FROM transaction WHERE receipt='$receipt'";
- //echo $sql;
-    $result=mysqli_query($conn,$sql);
-    if(mysqli_num_rows($result)>0)  
-        {        
-            $i=1;
-        while($r=mysqli_fetch_assoc($result))
-        {
-            $house_id=$r['house_id'];
-            $razorpay_payment_id=$r['razorpay_payment_id'];
-            $price=$r['price'];
-            $status=$r['status'];
-            $receipt=$r['receipt'];
-            $date=$r['date'];
-   // echo $house_id;
-        }
-    }
-    
-//$house_id=$_REQUEST['propert_id'];
-// echo $paymet_id;
-// echo $house_id;
- //$pid=$_REQUEST['propert_id'];
-   $curl = curl_init();
+$id=$_REQUEST['property_id'];
+$curl = curl_init();
 
 curl_setopt_array($curl, array(
             CURLOPT_URL => 'https://knndigitalpayment.com/AppBillinfo.php',
