@@ -58,7 +58,7 @@ function convertNumberToWordsForIndia($number){
     if($number_length>9){ $number_to_words_string = "Sorry This does not support more than 99 Crores"; }
     return ucwords(strtolower($number_to_words_string."Rupees ")." Only/-");
 }
-require('configdb.php');
+//require('configdb.php');
 $id=$_REQUEST['property_id'];
 $curl = curl_init();
 
