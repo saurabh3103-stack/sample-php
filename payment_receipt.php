@@ -60,8 +60,10 @@ function convertNumberToWordsForIndia($number){
 }
 //require('configdb.php');
 $id=$_REQUEST['property_id'];
-$razorpay_order_id=$_SESSION['razorpay_order_id'];
-$razorpay_payment_id=$_SESSION['razorpay_payment_id'];
+$rec_id=$_REQUEST['rec_id'];
+$trans_id=$_REQUEST['trans_id'];
+$date=$_REQUEST['date'];
+$amt=$_REQUEST['amt'];
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
@@ -292,10 +294,10 @@ h3.text-color.bill-heading{margin: 0 !important;}
                      
                         	       <tr>
                                     <td><span class="text-color">Form No-</span> 2 Rule B</td>  
-                                    <td><span class="text-color">Transaction ID:</span>  <?= $razorpay_payment_id; ?></td>  
-                                    <td><span class="text-color">Property ID :</span>  <?= $house_id; ?></td>  
+                                    <td><span class="text-color">Transaction ID:</span>  <?= $trans_id; ?></td>  
+                                    <td><span class="text-color">Property ID :</span>  <?= $id; ?></td>  
                                     <td class="text-color">Receipt ID</td>  
-                                    <td colspan="2"><?= $receipt; ?></td>   
+                                    <td colspan="2"><?= $rec_id; ?></td>   
                                    </tr>
                                     <tr>
                                     <td class="text-color">Bill No. </td>  
@@ -363,12 +365,12 @@ h3.text-color.bill-heading{margin: 0 !important;}
                                    </tr>
                                    <tr>  
                                     <td class="text-color">Amount Received:</td>
-                                    <td colspan="5"><?= $price; ?> </td>   
+                                    <td colspan="5"><?= $amt; ?> </td>   
                                    </tr>
                                    <tr>  
                                     <td class="text-color">Amount Received In Words</td>
                                     <td colspan="5">
-                                        <?php $pricee=substr($price,3);
+                                        <?php $pricee=substr($amt,3);
                                         echo convertNumberToWordsForIndia($pricee);?>
                                     </td>   
                                    </tr>
@@ -378,7 +380,7 @@ h3.text-color.bill-heading{margin: 0 !important;}
                                    </tr>
                                    <tr>  
                                     <td class="text-color">Transaction Status</td>
-                                    <td colspan="5"><?= $status; ?></td>   
+                                    <td colspan="5">Paid</td>   
                                    </tr>
                                    <tr>  
                                     <td></td>
