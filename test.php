@@ -1,5 +1,5 @@
 <?php
-echo "6016MDP03903001";
+echo "50520NA06017001";
 $curl = curl_init();
 curl_setopt_array($curl, array(
             CURLOPT_URL => 'https://knndigitalpayment.com/AppBillinfo.php',
@@ -12,7 +12,7 @@ curl_setopt_array($curl, array(
             CURLOPT_SSL_VERIFYPEER=> FALSE,
             CURLOPT_SSL_VERIFYHOST=>FALSE,
             CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS => array('GisId' => "6016MDP03903001"),
+            CURLOPT_POSTFIELDS => array('GisId' => "50520NA06017001"),
             CURLOPT_HTTPHEADER => array(
                         'X-TP-ApiKey: c77f5eb4d7d525855522d7ac65c5487d'
             ),
